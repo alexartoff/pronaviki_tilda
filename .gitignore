@@ -1,0 +1,8 @@
+.env
+/venv/
+/.idea/
+.DS_Store
+/resource/
+/__pycache__/
+Makefile
+users.txt
