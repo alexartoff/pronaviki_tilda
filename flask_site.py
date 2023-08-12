@@ -7,7 +7,7 @@ from datetime import datetime
 
 import add
 load_dotenv(find_dotenv())
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static', template_folder='templates')
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY')
 app.config['SERVER_NAME'] = os.environ.get('SERVER_NAME')
 SITE_URL = 'https://pronaviki.ru'
