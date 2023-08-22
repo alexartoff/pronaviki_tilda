@@ -1,5 +1,5 @@
 ### INTRO 
-Flask сайт [**"PRO НАВЫКИ"**](https://pronaviki.meta-matrix.ru/) онлайн-школы.     
+Flask сайт [**"PRO НАВЫКИ"**](https://psy-coach.org/).     
    
 ***
 ### INSTALLATION 
