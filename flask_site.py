@@ -77,7 +77,7 @@ def robots_dot_txt():
 
 @app.route('/sitemap.xml')
 async def sitemap():
-    sitemap_data = '''<?xml version="1.0" encoding="UTF-8"?>
+    sitemap_str = '''<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
    <url>
       <loc>https://psy-coach.org</loc>
@@ -90,7 +90,7 @@ async def sitemap():
       <priority>0.8</priority>
    </url>
 </urlset>'''
-    return Response(sitemap_data, mimetype='text/xml')
+    return Response(sitemap_str, mimetype='text/xml')
 
 
 @app.errorhandler(404)
