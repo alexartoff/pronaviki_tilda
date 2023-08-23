@@ -15,7 +15,7 @@
     <link rel="canonical" href="{{ context.meta_url }}">
     <!--/metatextblock-->
     <meta name="format-detection" content="telephone=no">
-    <link rel="shortcut icon" href="{{ url_for('static', filename= 'favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ context.meta_url }}/static/favicon.ico" type="image/x-icon">
     <!-- Assets -->
     <script src="{{ url_for('static', filename= 'script/tilda-fallback-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-grid-3.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">

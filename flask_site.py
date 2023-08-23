@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, Response
 from flask import request, flash, redirect, url_for
 import os
 from dotenv import load_dotenv, find_dotenv
@@ -68,6 +68,29 @@ async def study():
 
     if request.method == 'GET':
         return render_template('study.html', date=date, context=context)
+
+
+@app.route("/robots.txt")
+def robots_dot_txt():
+    return "User-agent: *\nAllow: /"
+
+
+@app.route('/sitemap.xml')
+async def sitemap():
+    sitemap_data = '''<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>https://psy-coach.org</loc>
+      <lastmod>2023-08-22</lastmod>
+      <priority>0.9</priority>
+   </url>
+   <url>
+      <loc>https://psy-coach.org/pronaviki</loc>
+      <lastmod>2023-08-22</lastmod>
+      <priority>0.8</priority>
+   </url>
+</urlset>'''
+    return Response(sitemap_data, mimetype='text/xml')
 
 
 @app.errorhandler(404)
