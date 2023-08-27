@@ -44,7 +44,7 @@ async def main():
         return render_template('index.html', context=context)
 
 
-@app.route('/study', methods=('GET', 'POST'))
+@app.route('/pronaviki', methods=('GET', 'POST'))
 async def study():
     date = datetime.now()
     context = {
