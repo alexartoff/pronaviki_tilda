@@ -12,84 +12,85 @@
     <meta property="og:title" content="{{ context.title }}">
     <meta property="og:description" content="{{ context.meta_description }}">
     <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ context.meta_url }}/static/kt_photo_.jpg">
+    <meta property="og:image:secure_url" content="{{ context.meta_url }}/static/kt_photo_.jpg">
     <link rel="canonical" href="{{ context.meta_url }}">
     <!--/metatextblock-->
     <meta name="format-detection" content="telephone=no">
+    <meta name="yandex-verification" content="7d3b9c9fa1468be2">
+    <meta name="google-site-verification" content="CV4YiyD9TTRk5glizSf2cmLalROQSs2NQuhBhzsUurQ">
     <link rel="icon" href="{{ context.meta_url }}/static/favicon.ico" type="image/x-icon">
     <!-- Assets -->
     <script src="{{ url_for('static', filename= 'script/tilda-fallback-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-grid-3.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-blocks-page37874004.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
-<!--    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-animation-2.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">-->
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-blocks-page.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-cover-1.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-cards-1.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
-<!--    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-zoom-2.0.min.css') }}" type="text/css" media="all" onload="this.media='all';" onerror="this.loaderr='y';">-->
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/fonts-tildasans.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-forms-1.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">-->
     <script type="text/javascript">
-        (function (d) {
-        if (!d.visibilityState) {
-        var s = d.createElement('script');
-        s.src = 'https://static.tildacdn.info/js/tilda-polyfill-1.0.min.js';
-        d.getElementsByTagName('head')[0].appendChild(s);
-        }
+        (function(d) {
+            if (!d.visibilityState) {
+                var s = d.createElement("script");
+                s.src = "https://static.tildacdn.info/js/tilda-polyfill-1.0.min.js";
+                d.getElementsByTagName("head")[0].appendChild(s);
+            }
         })(document);
+
         function t_onReady(func) {
-        if (document.readyState != 'loading') {
-        func();
-        } else {
-        document.addEventListener('DOMContentLoaded', func);
+            if (document.readyState != "loading") {
+                func();
+            } else {
+                document.addEventListener("DOMContentLoaded", func);
+            }
         }
-        }
+
         function t_onFuncLoad(funcName, okFunc, time) {
-        if (typeof window[funcName] === 'function') {
-        okFunc();
-        } else {
-        setTimeout(function() {
-        t_onFuncLoad(funcName, okFunc, time);
-        },(time || 100));
+            if (typeof window[funcName] === "function") {
+                okFunc();
+            } else {
+                setTimeout(function() {
+                    t_onFuncLoad(funcName, okFunc, time);
+                }, time || 100);
+            }
         }
-        }function t_throttle(fn, threshhold, scope) {return function () {fn.apply(scope || this, arguments);};}function t396_initialScale(t){t=document.getElementById("rec"+t);if(t){t=t.querySelector(".t396__artboard");if(t){var e,r=document.documentElement.clientWidth,a=[];if(i=t.getAttribute("data-artboard-screens"))for(var i=i.split(","),l=0;l<i.length;l++)a[l]=parseInt(i[l],10);else a=[320,480,640,960,1200];for(l=0;l<a.length;l++){var o=a[l];o<=r&&(e=o)}var d="edit"===window.allrecords.getAttribute("data-tilda-mode"),n="center"===t396_getFieldValue(t,"valign",e,a),g="grid"===t396_getFieldValue(t,"upscale",e,a),u=t396_getFieldValue(t,"height_vh",e,a),c=t396_getFieldValue(t,"height",e,a),f=!!window.opr&&!!window.opr.addons||!!window.opera||-1!==navigator.userAgent.indexOf(" OPR/");if(!d&&n&&!g&&!u&&c&&!f){for(var h=parseFloat((r/e).toFixed(3)),s=[t,t.querySelector(".t396__carrier"),t.querySelector(".t396__filter")],l=0;l<s.length;l++)s[l].style.height=Math.floor(parseInt(c,10)*h)+"px";for(var _=t.querySelectorAll(".t396__elem"),l=0;l<_.length;l++)_[l].style.zoom=h}}}}function t396_getFieldValue(t,e,r,a){var i=a[a.length-1],l=r===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+r);if(!l)for(var o=0;o<a.length;o++){var d=a[o];if(!(d<=r)&&(l=d===i?t.getAttribute("data-artboard-"+e):t.getAttribute("data-artboard-"+e+"-res-"+d)))break}return l}
+
+        function t_throttle(fn, threshhold, scope) {
+            return function() {
+                fn.apply(scope || this, arguments);
+            };
+        }
     </script>
     <script src="{{ url_for('static', filename= 'script/tilda-scripts-3.0.min.js') }}" charset="utf-8" defer="" onerror="this.loaderr='y';"></script>
     <script src="{{ url_for('static', filename= 'script/tilda-blocks-page37874004.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
-<!--    <script src="{{ url_for('static', filename= 'script/lazyload-1.3.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-animation-2.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
     <script src="{{ url_for('static', filename= 'script/tilda-cover-1.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
     <script src="{{ url_for('static', filename= 'script/tilda-cards-1.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-forms-1.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-phone-mask-1.1.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-zoom-2.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
-<!--    <script src="{{ url_for('static', filename= 'script/hammer.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-zero-scale-1.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
-<!--    <script src="{{ url_for('static', filename= 'script/tilda-events-1.0.min.js') }}" charset="utf-8" async="" onerror="this.loaderr='y';"></script>-->
     <script type="text/javascript">
         window.dataLayer = window.dataLayer || [];
     </script>
     <script type="text/javascript">
-        (function () {
-        if((/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent))===false && typeof(sessionStorage)!='undefined' && sessionStorage.getItem('visited')!=='y' && document.visibilityState){
-        var style=document.createElement('style');
-        style.type='text/css';
-        style.innerHTML='@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}';
-        document.getElementsByTagName('head')[0].appendChild(style);
-        function t_setvisRecs(){
-        var alr=document.querySelectorAll('.t-records');
-        Array.prototype.forEach.call(alr, function(el) {
-        el.classList.add("t-records_animated");
-        });
-        setTimeout(function () {
-        Array.prototype.forEach.call(alr, function(el) {
-        el.classList.add("t-records_visible");
-        });
-        sessionStorage.setItem("visited", "y");
-        }, 400);
-        }
-        document.addEventListener('DOMContentLoaded', t_setvisRecs);
-        }
+        (function() {
+            if (/bot|google|yandex|baidu|bing|msn|duckduckbot|teoma|slurp|crawler|spider|robot|crawling|facebook/i.test(navigator.userAgent) === false && typeof sessionStorage != "undefined" && sessionStorage.getItem("visited") !== "y" && document.visibilityState) {
+                var style = document.createElement("style");
+                style.type = "text/css";
+                style.innerHTML = "@media screen and (min-width: 980px) {.t-records {opacity: 0;}.t-records_animated {-webkit-transition: opacity ease-in-out .2s;-moz-transition: opacity ease-in-out .2s;-o-transition: opacity ease-in-out .2s;transition: opacity ease-in-out .2s;}.t-records.t-records_visible {opacity: 1;}}";
+                document.getElementsByTagName("head")[0].appendChild(style);
+                function t_setvisRecs() {
+                    var alr = document.querySelectorAll(".t-records");
+                    Array.prototype.forEach.call(alr, function(el) {
+                        el.classList.add("t-records_animated");
+                    });
+                    setTimeout(function() {
+                        Array.prototype.forEach.call(alr, function(el) {
+                            el.classList.add("t-records_visible");
+                        });
+                        sessionStorage.setItem("visited", "y");
+                    }, 400);
+                }
+                document.addEventListener("DOMContentLoaded", t_setvisRecs);
+            }
         })();
     </script>
     <style type="text/css">
@@ -102,19 +103,19 @@
     <div id="allrecords" class="t-records" data-hook="blocks-collection-content-node" data-tilda-lazy="yes" data-tilda-project-lang="RU">
         <div id="rec616380829" class="r t-rec t-rec_pt_15 t-rec_pb_0" style="padding-top:15px;padding-bottom:0px; " data-animationappear="off" data-record-type="14">
             <!-- cover -->
-            <div class="t-cover" id="recorddiv616380829" bgimgfield="img" style="background-image: url(&quot;{{ url_for('static', filename= 'siora-photography-hg.jpg') }}&quot;); height: 529px;">
+            <div class="t-cover" id="recorddiv616380829" bgimgfield="img" style="background-image: url(&quot;{{ url_for('static', filename= 'siora-photography-hg.jpg') }}&quot;); height: 617px;">
                 <div class="t-cover__carrier loaded" id="coverCarry616380829" data-content-cover-id="616380829" data-content-cover-bg="{{ url_for('static', filename= 'siora-photography-hg.jpg') }}" data-display-changed="true"
-                data-content-cover-height="60vh" data-content-cover-parallax="fixed" style="height: 529px; background-image: url(&quot;{{ url_for('static', filename= 'siora-photography-hg.jpg') }}&quot;);" itemscope=""
+                data-content-cover-height="70vh" data-content-cover-parallax="fixed" style="height: 617px; background-image: url(&quot;{{ url_for('static', filename= 'siora-photography-hg.jpg') }}&quot;);" itemscope=""
                 itemtype="http://schema.org/ImageObject">
                     <meta itemprop="image" content="{{ url_for('static', filename= 'siora-photography-hg.jpg') }}">
                 </div>
-                <div class="t-cover__filter" style="height: 529px; background-image: -webkit-linear-gradient(top, rgba(0, 67, 164, 0.7), rgba(144, 40, 124, 0.7));"></div>
+                <div class="t-cover__filter" style="height: 617px; background-image: -webkit-linear-gradient(top, rgba(0, 67, 164, 0.7), rgba(144, 40, 124, 0.7));"></div>
                 <div class="t-container">
                     <div class="t-col t-col_12 ">
-                        <div class="t-cover__wrapper t-valign_middle" style="height: 529px;">
+                        <div class="t-cover__wrapper t-valign_middle" style="height: 617px;">
                             <div class="t102 t-align_center" data-hook-content="covercontent">
-                                <h1 class="t102__title t-title" style="" field="title"><div style="font-size: 40px;" data-customstyle="yes">{{ context.h1_tag|safe }}</div></h1>
-                                <div class="t102__descr t-descr t-descr_md t102__descr_center" style="" field="descr">{{ context.h1_descr }}</div><span class="space"></span></div>
+                                <h1 class="t102__title t-title" field="title"><div style="font-size: 40px;" data-customstyle="yes">{{ context.h1_tag|safe }}</div></h1>
+                                <div class="t102__descr t-descr t-descr_md t102__descr_center" field="descr" style="font-size: 24px;">{{ context.h1_descr }}</div><span class="space"></span></div>
                         </div>
                     </div>
                 </div>
@@ -134,7 +135,7 @@
             </div>
         </div>
         {% block content %} {% endblock %}
-        <div id="rec615480665" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#ffffff; " data-animationappear="off" data-record-type="37" data-bg-color="#ffffff">
+        <div id="rec615480665" class="r t-rec t-rec_pt_90 t-rec_pb_0" style="padding-top:90px;padding-bottom:0px;background-color:#ffffff; " data-animationappear="off" data-record-type="37" data-bg-color="#ffffff">
             <!-- T022 -->
             <div class="t022 t-align_center">
                 <div class="t-container">
@@ -148,219 +149,7 @@
                 </div>
             </div>
         </div>
-        <div id="rec624966349" class="r t-rec t-rec_pt_0 t-rec_pb_15" style="padding-top:0px;padding-bottom:15px; " data-animationappear="off" data-record-type="678">
-            <!-- t678 -->
-            <div class="t678 ">
-                <div class="t-container">
-                    <div class="t-col t-col_8 t-prefix_2">
-                        <div>
-                            <form id="form624966349" name="form624966349" role="form" method="POST" data-formactiontype="0" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_3 " data-success-callback="t678_onSuccess">
-                                <div class="js-successbox t-form__successbox t-text t-text_md" aria-live="polite" style="display:none;"></div>
-                                <div class="t-form__inputsbox">
-                                    <div class="t-input-group t-input-group_nm" data-input-lid="user_name">
-                                        <label for="input_user_name" class="t-input-title t-descr t-descr_md" id="field-input_user_name" data-redactor-toolbar="no" field="li_title__1494858943227" style="color:;">Имя</label>
-                                        <div class="t-input-block" style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;">
-                                            <input type="text" autocomplete="name" name="user_name" id="input_user_name" class="t-input js-tilda-rule " value="" placeholder="Ваше имя" data-tilda-req="1" aria-required="true" data-tilda-rule="name" aria-describedby="error_1494858943227"
-                                            style="color:#000000;border:1px solid #000000;background-color:#eee;border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;" required>
-                                            <div class="t-input-error" aria-live="polite" id="error_1494858943227"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-input-group t-input-group_ph" data-input-lid="1493283059688" data-init-mask="yes">
-                                        <label for="input_user_contact" class="t-input-title t-descr t-descr_md" id="field-input_user_contact" data-redactor-toolbar="no" field="li_title__1493283059688" style="color:;">Способ связи с вами</label>
-                                        <div class="t-input-block" style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;">
-                                            <input type="text" class="t-input js-tilda-rule " name="user_contact" id="input_user_contact" value="" placeholder="Телефон / Эл.почта / Мессенджер" data-tilda-req="1" aria-required="true" data-tilda-rule="contact" aria-describedby="error_1493283059688"
-                                            style="color:#000000;border:1px solid #000000;background-color:#eee;border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;" required>
-                                            <div class="t-input-error" aria-live="polite" id="error_1493283059688"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-input-group t-input-group_ta" data-input-lid="1495027254430">
-                                        <label for="input_user_request" class="t-input-title t-descr t-descr_md" id="field-input_user_request" data-redactor-toolbar="no" field="li_title__1495027254430" style="color:;">Ваш запрос</label>
-                                        <div class="t-input-block" style="border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;">
-                                            <textarea name="user_request" id="input_user_request" class="t-input js-tilda-rule " placeholder="Введите текст" data-tilda-req="1" aria-required="true" aria-describedby="error_1495027254430" style="color:#000000; border:1px solid #000000; background-color:#eee; border-radius: 7px; -moz-border-radius: 7px; -webkit-border-radius: 7px;height:102px;"
-                                            rows="3" required></textarea>
-                                            <div class="t-input-error" aria-live="polite" id="error_1495027254430"></div>
-                                        </div>
-                                    </div>
-                                    <div class="t-form__errorbox-middle">
-                                        <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
-                                            <div class="t-form__errorbox-text t-text t-text_md">
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
-                                                <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="t-form__submit">
-                                        <button type="submit" class="t-btn t-submit t-btn_md" style="color: rgb(235, 24, 195); border: 3px solid rgb(235, 24, 195); background-color: rgb(255, 255, 255); border-radius: 90px; box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 30px 0px;">
-                                            Отправить
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="t-form__errorbox-bottom">
-                                    <div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
-                                        <div class="t-form__errorbox-text t-text t-text_md">
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-minlength"></p>
-                                            <p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div style="position: absolute; left: -5000px; bottom: 0; display: none;">
-                                    <input type="text" name="form-spec-comments" value="Its good" class="js-form-spec-comments" tabindex="-1">
-                                </div>
-                            </form>
-                            <style>
-                                #rec624966349 input::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 input::-moz-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 input:-moz-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 input:-ms-input-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 textarea::-webkit-input-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 textarea::-moz-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 textarea:-moz-placeholder {color:#000000; opacity: 0.5;}
-                                #rec624966349 textarea:-ms-input-placeholder {color:#000000; opacity: 0.5;}
-                            </style>
-                            <style>
-                                @media (hover), (min-width:0\0) {
-                                #rec624966349 .t-btn:not(.t-animate_no-hover):hover,
-                                #rec624966349 .t-btn:not(.t-animate_no-hover):focus-visible {background: #eb18c3 !important;color: #ffffff !important; }
-                                #rec624966349 .t-btn:not(.t-animate_no-hover){-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;}
-                                #rec624966349 .t-btntext:not(.t-animate_no-hover):hover{color: #ffffff !important; }
-                                }
-                            </style>
-                            <style>
-                                #rec624966349 .t-btn[data-btneffects-first],
-                                #rec624966349 .t-btn[data-btneffects-second],
-                                #rec624966349 .t-btn[data-btneffects-third],
-                                #rec624966349 .t-submit[data-btneffects-first],
-                                #rec624966349 .t-submit[data-btneffects-second],
-                                #rec624966349 .t-submit[data-btneffects-third] {
-                                position: relative;
-                                overflow: hidden;
-                                isolation: isolate;
-                                }
-                                #rec624966349 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects,
-                                #rec624966349 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                width: 100%;
-                                height: 100%;
-                                -webkit-transform: translateX(-85px);
-                                -ms-transform: translateX(-85px);
-                                transform: translateX(-85px);
-                                -webkit-animation-name: flash;
-                                animation-name: flash;
-                                -webkit-animation-duration: 3s;
-                                animation-duration: 3s;
-                                -webkit-animation-timing-function: linear;
-                                animation-timing-function: linear;
-                                -webkit-animation-iteration-count: infinite;
-                                animation-iteration-count: infinite;
-                                }
-                                #rec624966349 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md,
-                                #rec624966349 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_md {
-                                -webkit-animation-name: flash-md;
-                                animation-name: flash-md;
-                                }
-                                #rec624966349 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg,
-                                #rec624966349 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_wrap-effects_lg {
-                                -webkit-animation-name: flash-lg;
-                                animation-name: flash-lg;
-                                }
-                                #rec624966349 .t-btn[data-btneffects-first="btneffects-flash"] .t-btn_effects,
-                                #rec624966349 .t-submit[data-btneffects-first="btneffects-flash"] .t-btn_effects {
-                                background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, .1)), to(rgba(255, 255, 255, .4)));
-                                background: -webkit-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-                                background: -o-linear-gradient(left, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-                                background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .4));
-                                width: 45px;
-                                height: 100%;
-                                position: absolute;
-                                top: 0;
-                                left: 30px;
-                                -webkit-transform: skewX(-45deg);
-                                -ms-transform: skewX(-45deg);
-                                transform: skewX(-45deg);
-                                }
-                                @-webkit-keyframes flash {
-                                20% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                                @keyframes flash {
-                                20% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                                @-webkit-keyframes flash-md {
-                                30% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                                @keyframes flash-md {
-                                30% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                                @-webkit-keyframes flash-lg {
-                                40% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                                @keyframes flash-lg {
-                                40% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                100% {
-                                -webkit-transform: translateX(100%);
-                                transform: translateX(100%);
-                                }
-                                }
-                            </style>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <style>
-                #rec624966349 .t-submit:hover, #rec624966349 .t-submit:focus-visible{background: #2e2e2e !important;}
-                #rec624966349 .t-submit{-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out; transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;}
-            </style>
-        </div>
-        <div id="rec611947361" class="r t-rec t-rec_pt_0 t-rec_pb_30 r_anim r_showed" style="padding-top:0px;padding-bottom:30px; " data-record-type="551">
+        <div id="rec611947361" class="r t-rec t-rec_pt_0 t-rec_pb_90 r_anim r_showed" style="padding-top:0px;padding-bottom:90px; " data-record-type="551">
             <div class="t551">
                 <div class="t-container">
                     <div class="t-col t-col_6 t-prefix_3 t-align_center">
@@ -374,7 +163,7 @@
                             <ul role="list" class="t-sociallinks__wrapper" aria-label="Social media links">
                                 <!-- new soclinks -->
                                 <li class="t-sociallinks__item t-sociallinks__item_vk">
-                                    <a href="https://vk.com/katy_tarakanova" target="_blank" rel="nofollow noopener" aria-label="vk" style="width: 48px; height: 48px;">
+                                    <a href="https://vk.com/kt_psycoach" target="_blank" rel="nofollow noopener" aria-label="vk" style="width: 48px; height: 48px;">
                                         <svg class="t-sociallinks__svg" role="presentation" width="48px" height="48px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50ZM25 34c.406 19.488 10.15 31.2 27.233 31.2h.968V54.05c6.278.625 11.024 5.216 12.93 11.15H75c-2.436-8.87-8.838-13.773-12.836-15.647C66.162 47.242 71.783 41.62 73.126 34h-8.058c-1.749 6.184-6.932 11.805-11.867 12.336V34h-8.057v21.611C40.147 54.362 33.838 48.304 33.556 34H25Z"
                                             fill="#6e0b61"></path>
@@ -382,7 +171,7 @@
                                     </a>
                                 </li>
                                 <li class="t-sociallinks__item t-sociallinks__item_telegram">
-                                    <a href="https://t.me/taratyusha" target="_blank" rel="nofollow noopener" aria-label="telegram" style="width: 48px; height: 48px;">
+                                    <a href="https://t.me/katy_tarakanova" target="_blank" rel="nofollow noopener" aria-label="telegram" style="width: 48px; height: 48px;">
                                         <svg class="t-sociallinks__svg" role="presentation" width="48px" height="48px" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M50 100c27.614 0 50-22.386 50-50S77.614 0 50 0 0 22.386 0 50s22.386 50 50 50Zm21.977-68.056c.386-4.38-4.24-2.576-4.24-2.576-3.415 1.414-6.937 2.85-10.497 4.302-11.04 4.503-22.444 9.155-32.159 13.734-5.268 1.932-2.184 3.864-2.184 3.864l8.351 2.577c3.855 1.16 5.91-.129 5.91-.129l17.988-12.238c6.424-4.38 4.882-.773 3.34.773l-13.49 12.882c-2.056 1.804-1.028 3.35-.129 4.123 2.55 2.249 8.82 6.364 11.557 8.16.712.467 1.185.778 1.292.858.642.515 4.111 2.834 6.424 2.319 2.313-.516 2.57-3.479 2.57-3.479l3.083-20.226c.462-3.511.993-6.886 1.417-9.582.4-2.546.705-4.485.767-5.362Z"
                                             fill="#6e0b61"></path>
@@ -403,6 +192,72 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="rec632479227" class="r t-rec t-rec_pt_0 t-rec_pb_0" style="padding-top:0px;padding-bottom:0px;background-color:#f6d5e7; " data-animationappear="off" data-record-type="389" data-bg-color="#f6d5e7">
+            <!-- T389 -->
+            <div class="t389" id="t-footer_632479227">
+                <div class="t389__maincontainer" style="height: 10vh;">
+                    <div class="t389__content">
+                        <div class="t389__col t389__col_hiddenmobile">
+                            <div class="t389__typo t389__copyright t-name t-name_xs" field="text" style="color: #6e0b61;"></div>
+                        </div>
+                        <div class="t389__col t389__col_center t-align_center">
+                            <div class="t389__centercontainer">
+                                <ul class="t389__list"></ul>
+                                {% if context.footer_link == 'main' %}
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec632473288" data-menu-item-number="1">ОБО МНЕ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec616036539" data-menu-item-number="2">ЗАПРОСЫ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec612846577" data-menu-item-number="3">ЦЕНЫ И ТАРИФЫ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="{{ url_for('study') }}" data-menu-item-number="4">КУРС</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec620344075" data-menu-item-number="5">СЕРТИФИКАТЫ</a></li>
+                                {% endif %}
+                                {% if context.footer_link == 'study' %}
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="{{ url_for('main') }}" data-menu-item-number="1">ГЛАВНАЯ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec620170313" data-menu-item-number="2">СТРУКТУРА КУРСА</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec620171221" data-menu-item-number="3">ТЕМЫ СЕМИНАРОВ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="#rec621687165" data-menu-item-number="4">ЦЕНЫ И ТАРИФЫ</a></li>
+                                {% endif %}
+                                {% if context.footer_link == 'code404' %}
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="{{ url_for('main') }}" data-menu-item-number="1">ГЛАВНАЯ</a></li>
+                                    <li class="t389__list_item t-name t-name_xs"><a class="t389__typo" style="color: #6e0b61;" href="{{ url_for('study') }}" data-menu-item-number="2">КУРС</a></li>
+                                {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="t389__col t389__col_mobile">
+                            <div class="t389__typo t389__copyright t-name t-name_xs" field="text" style="color: #6e0b61;"></div>
+                        </div>
+                        <div class="t389__col">
+                            <div class="t389__scroll t-align_right">
+                                <a class="t389__typo t-name t-name_xs t389_scrolltop" style="color: #6e0b61;" href="javascript:t389_scrollToTop();">
+                                    Вернуться наверх
+                                    <span class="t389__icon">
+                                        <svg role="presentation" width="5" height="17" viewBox="0 0 6 20">
+                                            <path fill="#6e0b61" d="M5.78 3.85L3.12.28c-.14-.14-.3-.14-.43 0L.03 3.85c-.14.13-.08.27.13.27h1.72V20h2.06V4.12h1.72c.15 0 .22-.07.19-.17a.26.26 0 00-.07-.1z" fill-rule="evenodd"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script>
+                function t389_scrollToTop() {
+                    var duration = 700;
+                    var difference = window.pageYOffset;
+                    var step = 10 * difference / duration;
+                    var timer = setInterval(function() {
+                        difference -= step;
+                        window.scrollTo(0, difference);
+                        document.body.setAttribute('data-scrollable', 'true');
+                        if (window.pageYOffset === 0) {
+                            document.body.removeAttribute('data-scrollable');
+                            clearInterval(timer)
+                        }
+                    }, 10)
+                }
+            </script>
         </div>
     </div>
     <!--/allrecords-->
