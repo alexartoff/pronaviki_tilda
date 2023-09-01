@@ -8,22 +8,22 @@
     <title>{% block title %}{% endblock %}</title>
     <meta name="description" content="{{ context.meta_description }}">
     <meta name="keywords" content="{{ context.meta_keywords }}">
-    <meta property="og:url" content="{{ context.meta_url }}">
+    <meta property="og:url" content="{{ context.canonical_url }}">
     <meta property="og:title" content="{{ context.title }}">
     <meta property="og:description" content="{{ context.meta_description }}">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="{{ context.meta_url }}/static/kt_photo_.jpg">
+    <meta property="og:image" content="{{ context.main_url }}/static/kt_photo_.jpg">
     <meta property="og:image:secure_url" content="{{ context.meta_url }}/static/kt_photo_.jpg">
-    <meta property="twitter:url" content="https://psy-coach.org/">
+    <meta property="twitter:url" content="{{ context.canonical_url }}">
     <meta name="twitter:title" content="Психологический коучинг">
     <meta name="twitter:description" content="Психологический коучинг от Екатерины Таракановой - on-line консультации по всему миру">
-    <meta name="twitter:image" content="https://psy-coach.org/static/kt_photo_.jpg">
-    <link rel="canonical" href="{{ context.meta_url }}">
+    <meta name="twitter:image" content="{{ context.main_url }}/static/kt_photo_.jpg">
+    <link rel="canonical" href="{{ context.canonical_url }}">
     <!--/metatextblock-->
     <meta name="format-detection" content="telephone=no">
     <meta name="yandex-verification" content="7d3b9c9fa1468be2">
     <meta name="google-site-verification" content="CV4YiyD9TTRk5glizSf2cmLalROQSs2NQuhBhzsUurQ">
-    <link rel="icon" href="{{ context.meta_url }}/static/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ context.main_url }}/static/favicon.ico" type="image/x-icon">
     <!-- Assets -->
     <script src="{{ url_for('static', filename= 'script/tilda-fallback-1.0.min.js') }}" charset="utf-8" onerror="this.loaderr='y';"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename= 'css/tilda-grid-3.0.min.css') }}" type="text/css" media="all" onerror="this.loaderr='y';">
